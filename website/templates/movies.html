@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    Movies
+{% endblock %}
+
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <div class="container text-center">
+        {% for movie in movies %}
+            {% if loop.index0 % 4 == 0 %}
+                <div class="row">
+            {% endif %}
+                <div class="col" align="center">
+                    <div class="card bg-body-tertiary shadow" style="width: 16rem;">
+                        <img src="{{ url_for("static", filename = "poster/" + movie.poster)}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {% if movie.title|length > 18 %}
+                                <h6 class="card-title">{{movie.title}}</h6>
+                            {% else %}
+                                <h5 class="card-title">{{movie.title}}</h5>
+                            {% endif %}
+                            <br>
+                            <a class="btn btn-secondary" href="/movies/{{ movie.id }}" role="button">Reviews</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            {% if loop.index0 % 4 == 3 %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
