@@ -67,7 +67,8 @@ flask --app website run
 ## Preview
 
 1. Movies page
-![movies.JPG](%21README_PICS%2Fmovies.JPG)
+![movies](https://github.com/LukaszFraczek/FlaskFilm/assets/30197518/20bb5a1e-ba69-4ef7-bdcf-05ab3b2d20b1)
+
 
 2. Movie details page
-![example.JPG](%21README_PICS%2Fexample.JPG)
+![example](https://github.com/LukaszFraczek/FlaskFilm/assets/30197518/d52e1e4f-47ee-4b35-af41-b45c8d0aae99)
