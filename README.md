@@ -5,7 +5,6 @@ FlaskFilm is a web application built with Flask, allowing users to browse throug
 ## Table of Contents
 
 - [Features](#features)
-- [Requirements](#requirements)
 - [Installation](#installation)
 - [Launching the app](#launching-the-app)
 - [Preview](#preview)
@@ -16,41 +15,33 @@ FlaskFilm is a web application built with Flask, allowing users to browse throug
 - User account system for posting movie reviews.
 - Moderator capability to remove selected reviews.
 
-## Requirements
-
-Make sure you have the following dependencies installed before running the application:
-
-- alembic==1.12.0
-- blinker==1.6.3
-- click==8.1.7
-- colorama==0.4.6
-- Flask==3.0.0
-- Flask-Login==0.6.2
-- Flask-Migrate==4.0.5
-- Flask-SQLAlchemy==3.1.1
-- greenlet==3.0.0
-- itsdangerous==2.1.2
-- Jinja2==3.1.2
-- Mako==1.2.4
-- MarkupSafe==2.1.3
-- SQLAlchemy==2.0.22
-- typing_extensions==4.8.0
-- Werkzeug==2.3.7
-
-You can install these requirements using the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/LukaszFraczek/FlaskFilm
+cd FlaskFilm
 ```
 
-2. Install the project dependencies:
+2. Set up a Python virtual environment (optional but recommended):
+```bash
+# On Windows
+python -m venv venv
+
+# On macOS and Linux
+python3 -m venv venv
+```
+
+3. Activate the virtual environment (if set up):
+```bash
+# On Windows
+venv\Scripts\activate
+
+# On macOS and Linux
+source venv/bin/activate
+```
+
+4. Install the project dependencies:
 ```bash
 pip install -r requirements.txt
 ```
